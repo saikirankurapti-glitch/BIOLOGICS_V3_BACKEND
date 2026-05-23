@@ -148,7 +148,7 @@ origins = [
     "http://127.0.0.1:3000",
     "http://localhost:5500",
     "http://127.0.0.1:5500",
-    "https://delightful-ocean-01c7d0300.7.azurestaticapps.net",
+    "https://black-sky-0e9160600.7.azurestaticapps.net",
 ]
 
 env_origins = os.environ.get("ALLOWED_ORIGINS")
