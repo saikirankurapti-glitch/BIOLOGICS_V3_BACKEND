@@ -1,0 +1,17 @@
+# GPR35 Ligand Library - Sample SMILES for Hit Screening Test
+# Format: SMILES MoleculeID
+CC1=CC=C(C=C1)NC(=O)C2=CC=CC=C2 GPR35-001
+OC1=CC=C(C=C1)C(=O)NC2=CC=CC=C2 GPR35-002
+CC(=O)NC1=CC=C(C=C1)O GPR35-003
+CN1C=NC2=C1C(=O)N(C(=O)N2C)C Caffeine
+CC(C)CC1=CC=C(C=C1)C(C)C(=O)O Ibuprofen
+CC12CCC3C(C1CCC2O)CCC4=CC(=O)CCC34C Testosterone
+OC(=O)C1=CC=CC=C1O SalicylicAcid
+CC(=O)OC1=CC=CC=C1C(=O)O Aspirin
+C1CCCCC1N Cyclohexylamine
+OC1=CC(=CC(=C1O)O)C(=O)OC2=CC(=CC(=C2O)O)C(=O)O GallicAcidDimer
+C1=CC=C(C=C1)C2=CC=CC=C2 Biphenyl
+OC(=O)C1=CC=C(C=C1)N Amino-BenzoicAcid
+C1=CC=C2C(=C1)C=CC=C2 Naphthalene
+CC(=O)NC1=CC=C(C=C1)OCC(=O)O Atenolol-frag
+NC1=NC=NC2=C1N=CN2 Adenine
