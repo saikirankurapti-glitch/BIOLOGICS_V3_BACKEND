@@ -33,8 +33,13 @@ async def get_platform_stats(current_user: User = Depends(get_current_user)) -> 
     pipeline = {
         "Target Discovery": target_count,
         "Structural Mapping": await DockingJob.find(DockingJob.created_by == current_user.email).count(),
+        "Hit Screening": await ScreeningJob.find(ScreeningJob.created_by == current_user.email).count(),
         "Lead Optimization": await OptimizationJob.find(OptimizationJob.created_by == current_user.email).count(),
-        "ADMET Profiling": await ADMETJob.find(ADMETJob.created_by == current_user.email).count()
+        "ADMET Profiling": await ADMETJob.find(ADMETJob.created_by == current_user.email).count(),
+        # For demo purposes, checking if they have wet lab experiments
+        "Robotic Validation": await Experiment.find(Experiment.created_by == current_user.email, Experiment.experiment_type == "Wet Lab").count(),
+        "Preformulation": await Experiment.find(Experiment.created_by == current_user.email, Experiment.experiment_type == "Preformulation").count(),
+        "Formulation": await Experiment.find(Experiment.created_by == current_user.email, Experiment.experiment_type == "Formulation").count()
     }
 
     # 🏆 Top Discoveries (Recent high-affinity optimizations)

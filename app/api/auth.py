@@ -251,3 +251,21 @@ async def update_user_me(user_update: UserUpdate, current_user: User = Depends(g
         is_active=db_user.is_active,
         is_superuser=db_user.is_superuser
     )
+
+class PasswordChange(BaseModel):
+    current_password: str
+    new_password: str
+
+@router.post("/change-password")
+async def change_password(data: PasswordChange, current_user: User = Depends(get_current_user)):
+    db_user = await User.get(current_user.id)
+    if not db_user:
+        raise HTTPException(status_code=404, detail="User not found")
+        
+    if db_user.hashed_password != f"hashed_{data.current_password}":
+        raise HTTPException(status_code=400, detail="Incorrect current password")
+        
+    db_user.hashed_password = f"hashed_{data.new_password}"
+    await db_user.save()
+    
+    return {"message": "Password updated successfully"}

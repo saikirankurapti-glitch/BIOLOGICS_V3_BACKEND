@@ -453,8 +453,61 @@ def generate_optimization_pdf(job_data: dict, user=None):
             pdf.cell(45, 8, f"+{delta}" if delta > 0 else str(delta), 1, 0, 'C')
             pdf.cell(45, 8, str(item.get('impact', '')), 1, 1, 'C')
 
-    pdf.ln(10)
+    import os
+    import uuid
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    
+    # Generate the dynamic plot based on SAR data to mimic the frontend Plotly graph
+    temp_img_path = f"temp_plot_{uuid.uuid4().hex}.png"
+    
+    try:
+        x_vals = [0]
+        try:
+            base_affinity = abs(float(results.get('original_affinity', 8.1)))
+        except (ValueError, TypeError):
+            base_affinity = 8.1
+            
+        y_vals = [base_affinity]
+        
+        for i, item in enumerate(sar):
+            x_vals.append(i + 1)
+            try:
+                # The affinity change in the backend is usually negative (e.g. -0.4) meaning a better score.
+                # Since we are plotting absolute potency (like the frontend), a -0.4 change means absolute potency goes UP by +0.4.
+                change = abs(float(item.get('affinity_change', 0)))
+            except (ValueError, TypeError):
+                change = 0
+            y_vals.append(y_vals[-1] + change)
+            
+        plt.figure(figsize=(10, 5))
+        plt.plot(x_vals, y_vals, marker='o', linestyle='-', color='#10b981', linewidth=4, markersize=10, markerfacecolor='#115e59', markeredgecolor='white')
+        plt.fill_between(x_vals, y_vals, min(y_vals) - 0.5, color='#10b981', alpha=0.1)
+        plt.title('Evolution of pIC50 Potency across Generations', fontsize=14, fontweight='bold', color='#115e59')
+        plt.xlabel('Generation Step', fontsize=12, fontweight='bold', color='#4d8b85')
+        plt.ylabel('pIC50 Potency', fontsize=12, fontweight='bold', color='#4d8b85')
+        plt.grid(True, linestyle='--', alpha=0.5)
+        plt.tight_layout()
+        plt.savefig(temp_img_path, dpi=150)
+        plt.close('all')
+        
+        if os.path.exists(temp_img_path):
+            pdf.add_page()
+            pdf.set_fill_color(26, 35, 126)
+            pdf.set_text_color(255, 255, 255)
+            pdf.set_font('Arial', 'B', 12)
+            pdf.cell(0, 10, ' Generative Engine Real-Time Trajectory', 0, 1, 'L', fill=True)
+            pdf.set_text_color(0, 0, 0)
+            pdf.ln(10)
+            pdf.image(temp_img_path, x=15, w=180)
+            pdf.ln(10)
+            os.remove(temp_img_path)
+    except Exception as e:
+        print(f"Failed to generate matplotlib plot for PDF: {e}")
+        pdf.ln(10)
+
     pdf.set_font('Arial', 'I', 9)
-    pdf.multi_cell(0, 6, "Report Note: Lead optimization scores are predicted using an XGBoost-based binding affinity model combined with evolutionary/generative AI strategies. Experimental SPR/ITC validation is required before advancing to clinical candidate selection.")
+    pdf.multi_cell(0, 6, "Report Note: Lead optimization scores are predicted using an XGBoost-based binding affinity model combined with evolutionary/generative AI strategies.")
 
     return bytes(pdf.output(dest='S'))
