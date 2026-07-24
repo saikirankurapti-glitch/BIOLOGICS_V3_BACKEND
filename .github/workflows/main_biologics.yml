@@ -77,4 +77,3 @@ jobs:
           app-name: 'Biologics'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0BFCC4B98C4345D9865F92D4A4A959DC }}
-          startup-command: 'bash startup.sh'
