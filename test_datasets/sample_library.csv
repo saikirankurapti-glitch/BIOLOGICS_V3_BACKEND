@@ -1,0 +1,16 @@
+SMILES,ID,Name,MolWt,Activity
+CC1=CC=C(C=C1)NC(=O)C2=CC=CC=C2,GPR35-001,Benzanilide-methyl,211.26,Active
+OC1=CC=C(C=C1)C(=O)NC2=CC=CC=C2,GPR35-002,Hydroxybenzamide,213.24,Inactive
+CC(=O)NC1=CC=C(C=C1)O,GPR35-003,Acetaminophen,151.16,Active
+CN1C=NC2=C1C(=O)N(C(=O)N2C)C,CAFF-001,Caffeine,194.19,Inactive
+CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,IBU-001,Ibuprofen,206.28,Active
+CC12CCC3C(C1CCC2O)CCC4=CC(=O)CCC34C,TEST-001,Testosterone,288.42,Active
+OC(=O)C1=CC=CC=C1O,SAL-001,Salicylic Acid,138.12,Active
+CC(=O)OC1=CC=CC=C1C(=O)O,ASP-001,Aspirin,180.16,Active
+C1CCCCC1N,CHA-001,Cyclohexylamine,99.17,Inactive
+NC1=NC=NC2=C1N=CN2,ADN-001,Adenine,135.13,Active
+OC1=CC=CC=C1,PHE-001,Phenol,94.11,Inactive
+C1=CC=C(C=C1)O,PHE-002,Phenol-iso,94.11,Inactive
+CC(O)CC1=CC=CC=C1,PPA-001,Phenylpropanol,136.19,Inactive
+OC(=O)C1=CC=CC=C1,BEN-001,Benzoic Acid,122.12,Active
+C1=CC=C2C(=C1)C=CC=C2,NAP-001,Naphthalene,128.17,Inactive

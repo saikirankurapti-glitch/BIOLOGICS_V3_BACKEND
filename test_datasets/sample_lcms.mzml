@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<indexedmzML xmlns="http://psi.hupo.org/ms/mzml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <mzML>
+    <run>
+      <spectrumList count="3">
+        <spectrum index="0" id="scan=1">
+          <cvParam name="ms level" value="2"/>
+          <cvParam name="molecular formula" value="C8H10N4O2"/>
+          <cvParam name="compound name" value="Caffeine"/>
+          <precursorList>
+            <precursor>
+              <selectedIonList>
+                <selectedIon>
+                  <cvParam name="selected ion m/z" value="195.09"/>
+                </selectedIon>
+              </selectedIonList>
+            </precursor>
+          </precursorList>
+        </spectrum>
+        <spectrum index="1" id="scan=2">
+          <cvParam name="ms level" value="2"/>
+          <cvParam name="molecular formula" value="C9H8O4"/>
+          <cvParam name="compound name" value="Aspirin"/>
+          <precursorList>
+            <precursor>
+              <selectedIonList>
+                <selectedIon>
+                  <cvParam name="selected ion m/z" value="180.06"/>
+                </selectedIon>
+              </selectedIonList>
+            </precursor>
+          </precursorList>
+        </spectrum>
+        <spectrum index="2" id="scan=3">
+          <cvParam name="ms level" value="2"/>
+          <cvParam name="molecular formula" value="C13H18O2"/>
+          <cvParam name="compound name" value="Ibuprofen"/>
+          <precursorList>
+            <precursor>
+              <selectedIonList>
+                <selectedIon>
+                  <cvParam name="selected ion m/z" value="206.12"/>
+                </selectedIon>
+              </selectedIonList>
+            </precursor>
+          </precursorList>
+        </spectrum>
+      </spectrumList>
+    </run>
+  </mzML>
+</indexedmzML>

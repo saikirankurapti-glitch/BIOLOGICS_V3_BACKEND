@@ -1,0 +1,83 @@
+{
+  "PC_AssaySubmit": {
+    "assay": {
+      "descr": {
+        "aid": {"id": 1234},
+        "name": "GPR35 Agonist Screen - Sample BioAssay",
+        "description": ["Sample BioAssay data for testing hit screening pipeline"]
+      }
+    },
+    "data": [
+      {
+        "sid": 12345,
+        "outcome": "Active",
+        "smiles": "CC1=CC=C(C=C1)NC(=O)C2=CC=CC=C2",
+        "CID": 7481,
+        "activity_score": 85
+      },
+      {
+        "sid": 12346,
+        "outcome": "Active",
+        "smiles": "OC1=CC=C(C=C1)C(=O)NC2=CC=CC=C2",
+        "CID": 7482,
+        "activity_score": 72
+      },
+      {
+        "sid": 12347,
+        "outcome": "Inactive",
+        "smiles": "CC(=O)NC1=CC=C(C=C1)O",
+        "CID": 1983,
+        "activity_score": 15
+      },
+      {
+        "sid": 12348,
+        "outcome": "Active",
+        "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+        "CID": 2519,
+        "activity_score": 90
+      },
+      {
+        "sid": 12349,
+        "outcome": "Active",
+        "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+        "CID": 3672,
+        "activity_score": 67
+      },
+      {
+        "sid": 12350,
+        "outcome": "Inactive",
+        "smiles": "OC(=O)C1=CC=CC=C1O",
+        "CID": 338,
+        "activity_score": 20
+      },
+      {
+        "sid": 12351,
+        "outcome": "Active",
+        "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+        "CID": 2244,
+        "activity_score": 78
+      },
+      {
+        "sid": 12352,
+        "outcome": "Inactive",
+        "smiles": "NC1=NC=NC2=C1N=CN2",
+        "CID": 190,
+        "activity_score": 10
+      },
+      {
+        "sid": 12353,
+        "outcome": "Active",
+        "smiles": "OC1=CC(=CC(=C1O)O)C(=O)O",
+        "CID": 370,
+        "activity_score": 82
+      },
+      {
+        "sid": 12354,
+        "outcome": "Active",
+        "smiles": "CC12CCC3C(C1CCC2O)CCC4=CC(=O)CCC34C",
+        "CID": 6013,
+        "activity_score": 91
+      }
+    ]
+  }
+}

@@ -1,0 +1,3999 @@
+{
+  "PC_AssaySubmit": {
+    "assay": {
+      "descr": {
+        "aid": {
+          "id": 1234,
+          "version": 1
+        },
+        "aid_source": {
+          "db": {
+            "name": "University of Pittsburgh Molecular Library Screening Center",
+            "source_id": {
+              "str": "NIH Compound Library Profiling: Redox Cycling H2O2 Generation EC50 Confirmation"
+            }
+          }
+        },
+        "name": "NIH Compound Library Profiling: Compound and DTT Dependent Redox Cycling H2O2 Generation 10-point Concentration Response Confirmation Assay.",
+        "description": [
+          "List of compounds to be tested: active compounds identified in the Redox Cycling H2O2 Generation primary screen AID 878, will be confirmed in 10-point concentration response assays.",
+          "",
+          "Hydrogen peroxide (H2O2) can modulate (activate or inhibit) the activity of a variety of proteins including protein kinases, protein phosphatases, transcription factors, phospholipases, ion channels and G proteins.  H2O2 is capable of oxidizing the cysteine residues of proteins that may be crucial for their catalytic and/or structural function. Many proteins, including a significant number of the targets screened by the MLSCN, contain an active site cysteine that is required for biological activity e.g. the protein tyrosine phosphatases, the cathepsin lysosomal proteases, the caspases (cysteine using, aspartic acid selective proteases), the ubiquitin-conjugating enzymes, and the peroxiredoxins. In biochemical assays for enzymes with active site cysteines, it is common practice to try to maintain the protein in its reduced and active form by including one of a variety of reducing agents in assay and/or enzyme storage buffers; dithiotreitol (DTT), tris(2-carboxyethyl)phosphine (TCEP), -mercaptoethanol (BME), glutathione (GSH) or cysteine (Cys). However, in the presence of oxygen at neutral to acidic pH DTT undergoes a chain oxidation reaction to produce H2O2, and furthermore a number of compounds have been demonstrated to generate H2O2 by a cyclic redox mechanism in the presence of reducing agents. ",
+          "",
+          "H2O2 is a relatively mild oxidant that can oxidize the cysteine residues of proteins to cysteine sulfenic acid (Cys-SOH) or disulfide that can reduced back to cysteine by cellular thiol donors such as GSH, Grx and Trx . The pKa of sulfhydryl groups of most cysteine residues (Cys-SH) in proteins is ~ 8.5 and they do not react at physiologically significant rates with H2O2 unless the reaction is catalyzed. The cysteine thiolate anion (Cys-S-) is much more readily oxidized by H2O2 and for some signaling proteins, most notably the protein tyrosine phsophatases (PTPs), the cysteine has been clearly shown to be preferentially in a thiolate form. The 107 protein tyrosine phosphatases (PTPs) found in the human genome are defined by the active site sequence C(X)5R(S/T), with X being any amino acid, and they are critical regulators of mammalian cell proliferation, differentiation, and apoptosis. The active site cysteine of PTPs is required for catalytic activity and performs a nucleophilic attack on the phosphotyrosine residues of the substrate to form a covalent thiol-phosphate intermediate followed by hydrolysis and the release of the phosphate.  Due to its unique environment and the invariant arginine, the pKa of PTP active site cysteines is unusually low (pKa 4.7-5.4) and exists as a thiolate anion (Cys-S-) at neutral pH, which enhances its catalytic function as a nucleophile but renders it susceptible to inactivation by H2O2. The specific and reversible oxidation and inactivation of PTPs by H2O2 has now been demonstrated for a number of PTPs involved in the regulation of key signaling pathways controlling normal physiological processes and disease progression; PTP1B, PTP, LAR, VHR, PTEN, SHP-2, Cdc25B, and MKP-3.",
+          "",
+          "We have developed a simple 384-well homogeneous colorimetric assay to measure the generation H2O2 by compounds of the NIHs MLSCN small molecule library in the presence of DTT. It is anticipated that by profiling the full diversity MLSCN compound library in this assay we will identify compounds capable of generating H2O2 in the presence of reducing agents, and can annotate the PubChem database with this activity.  Through a simple cross target query of the PubChem database, these data will alert investigators whether their active compounds have the potential to modulate the activity of their targets through the redox cycling generation of H2O2. For target proteins with cysteine residues crucial for their catalytic and/or structural function this will identify false actives that modulate activity through an indirect mechanism and would not be worth pursuing."
+        ],
+        "protocol": [
+          "Assay Protocol for H2O2 Generation Assay",
+          "The method is based on the H2O2 and horseradish peroxidase (HRP) mediated oxidation of phenol red that alters its absorbance at 610 nm after the pH has been adjusted to alkaline pH with NaOH (Pick & Keisari 1981).",
+          "",
+          "Materials: ",
+          "1. H2O2 30 % (w/w) Sigma Aldrich CAS  7722-84-1 (8.82M)",
+          "2. Phenol Red Sigma Aldrich, catalog  P-2417. Prepare stock in 1.0 mg/mL in DI H2O.",
+          "3. Horseradish peroxidase,catalog  P2088-10KU. Prepare stock 2 mg/mL in Hanks Balanced Salt Solution (HBSS)",
+          "4. Hanks Balanced Salt Solution (HBSS).",
+          "5. DTT 200 mM stock. ",
+          "6. Stop reaction 1N NaOH.",
+          "7. Compounds in DMSO; typically 10 or 1 mM.",
+          "8. 384-well 120 uL Greiner clear bottom plates.",
+          "",
+          "Protocol:",
+          "1. Prepare 3X Phenol Red-HRP detection reagent in HBSS. ",
+          "For 10 mL: HBSS6.1 mL + Phenol Red 3.0 mL (Stock 1.0 mg/mL)+ HRP 900 uL(Stock 2 mg/mL)",
+          "2. Prepare 2.4 mM DTT in HBSS (3X concentration for 0.8 mM final DTT concentration in a 60 uL reaction volume)",
+          "For 10 mL: HBSS 9.88 mL + DTT 120 uL (stock 200 mM)",
+          "3. Dilute compounds in HBSS to 3X desired concentration ",
+          "4. Prepare H2O2 Standard Curve: 100, 50, 25, 12.5, 6.25, 3.125, 1.5625 & 0 uM in HBSS  final concentration in assay.",
+          "Add 10 uL 30% H2O2 to 10 mL HBSS (8.82 mM)",
+          "Add 340 uL of 8.82 mM H2O2 to 9.660 mL HBSS (300 uM)",
+          "Serially dilute 1:2 the 300 uM solution in HBSS to generate 150, 75, 37.5, 18.75, 9.375, 4.6875 & 0 uM standards.",
+          "5. Add 20 uL of HBSS to control and standard wells.",
+          "6. Transfer 20 uL of compounds to assay plate. ",
+          "7. Transfer 20 uL of 3 mM DTT solution in all wells containing compounds (Do not add DTT in controls or standards wells).",
+          "8. Pre-incubate the compound and DTT at room temperature for 15 minutes.",
+          "9. Meanwhile, transfer 20 uL H2O2 standards to assay plate.",
+          "Max controls: 20 uL 300 uM H2O2 in HBSS (100 uM final H2O2). ",
+          "Min controls: 20 uL of HBSS (0 uM final H2O2).",
+          "50% controls: 20 uL of 150 uM H2O2 in HBSS (50 uM final H2O2).",
+          "10. Add 20 uL of 3X Phenol Red-HRP solution in HBSS. ",
+          "11. Add 10 uL of 1N NaOH stop solution and shake the plates on a shaking platform.",
+          "12. Read absorbance at 610 nm on the M5 Plate Reader.",
+          " "
+        ],
+        "comment": [
+          "List of compounds to be tested: active compounds identified in the Redox Cycling H2O2 Generation primary screen AID 878, will be confirmed in 10-point concentration response assays.",
+          "",
+          "PMLSC H2O2 Assay EC50 Scoring System:",
+          "",
+          "PUBCHEM_ACTIVITY_OUTCOME",
+          "",
+          "1 - Substance is considered inactive when the EC50 is > 50 uM",
+          "2 - Substance is considered active when the EC50 is < 50 uM",
+          "3 - Substance activity outcome is inconclusive",
+          "",
+          "PUBCHEM_ACTIVITY_SCORE",
+          "",
+          "40 - Compounds that in the presence of DTT failed to produce detectable levels of H2O2 in a 10-pt dose response assay with an EC50 > 50 uM ",
+          "",
+          "50 - Compounds that in the presence of DTT were active in the H2O2 generation 10-pt dose response assay with an EC50 in the 20 to 50 uM range",
+          "",
+          "60 - Compounds that in the presence of DTT were active in the H2O2 generation 10-pt dose response assay with an EC50 in the 10 to 20 uM range",
+          "",
+          "70 - Compounds that in the presence of DTT were active in the H2O2 generation 10-pt dose response assay with an EC50 in the 1 to 10 uM range",
+          "",
+          "80 - Compounds that in the presence of DTT were active in the H2O2 generation 10-pt dose response assay with an EC50 < 1 uM",
+          "",
+          "Data Analysis:",
+          "",
+          "Compounds will be tested in singlicate 10-point dose response assays, typically at a maximum concentration of 50uM final (1% DMSO). Compounds will be diluted to 150 uM in dH2O (3% DMSO final) and serially diluted in dH2O + 3% DMSO to provide the desired concentration range. 20uL of the compound dilutions will be transferred to a total of 60 uL assay volume (3-fold dilution)",
+          "",
+          "An ActivityBase template has been written that will automatically calculate % activation together with plate control Signal to Noise and Z-factors for secondary dose response data. These data will be used to perform quality control (QC) and either pass or fail plates. For data from plates that pass QC, EC50#s will be calculated using the four parameter logistic model, also called the Sigmoidal Dose-Response Model. One form of the equation is: ",
+          "y = (A+((B-A)/(1+((x/C)^D))))",
+          "where y is the percent activation and x is the corresponding concentration. The fitted C parameter is the EC50, and is defined as the concentration giving a response half way between the fitted top and bottom of the curve. The fitted D parameter is called the Slope. The A and B parameters are locked. A is assigned to be 0 and B is 100. Also reported are the R2 and Hill slope values. The R2 value is the square of the linear correlation coefficient for a given fit cell. It will return a value between 0 and 1.00 as the correlation coefficient only returns values between -1.00 and 1.00. The Hill slope value or slope value quantifies the steepness of the curve; a dose response curve with a standard slope has a Hill slope of 1.0",
+          "",
+          "Definition of Hit Criteria: It is anticipated that all HTS actives will be confirmed in 10-pt EC50 concentration response curves. Actives confirmed as concentration dependent redox cycling H2O2 generators will be further evaluated and should exhibit: ",
+          "EC50 < 50 uM",
+          "Structural confirmation by LCMS.",
+          " ",
+          "Secondary assay testing paradigm:",
+          "Compounds confirmed as concentration dependent redox cycling generators of H2O2 in the presence of DTT will be tested in a concentration response assays with four alternate reducing agents; TCEP, beta-mercaptoethanol, glutathione and L-cysteine."
+        ],
+        "xref": [
+          {
+            "xref": {
+              "dburl": "http://pmlsc.pitt.edu/"
+            },
+            "comment": "University of Pittsburgh Molecular Library Screening Center (PMLSC) Website"
+          },
+          {
+            "xref": {
+              "pmid": 14711389
+            },
+            "comment": "Improved statistical methods for hit selection in high-throughput screening.J Biomol Screen. 2003 Dec;8(6):634-47."
+          },
+          {
+            "xref": {
+              "aid": 878
+            },
+            "comment": "NIH Compound Library Profiling: Compound and DTT Dependent Redox Cycling H2O2 Generation Primary Screen AID 878; Compounds tested at 10 uM and DTT at 0.8 mM."
+          }
+        ],
+        "results": [
+          {
+            "tid": 1,
+            "name": "Qualifier",
+            "description": [
+              "this qualifier is intended to be interpreted with the next TID called \"DR EC50 uM\". If qualifier is \"=\" than \"DR EC50 uM\" equals to the value in that column, if qualifier is \">\" than \"DR EC50 uM\" is bigger than that value"
+            ],
+            "type": 4
+          },
+          {
+            "tid": 2,
+            "name": "DR EC50 uM",
+            "description": [
+              "EC50 determined from a 10-point concentration response assay",
+              " "
+            ],
+            "type": 1,
+            "unit": 5,
+            "ac": true
+          },
+          {
+            "tid": 3,
+            "name": "DR EC50 R2",
+            "description": [
+              "R2 value, the square of the linear correlation coefficient for a given fit cell"
+            ],
+            "type": 1,
+            "unit": 254
+          },
+          {
+            "tid": 4,
+            "name": "DR EC50 Hill Slope",
+            "description": [
+              "Hill slope value or slope value quantifies the steepness of the curve; a dose response curve with a standard slope has a Hill slope of 1.0 "
+            ],
+            "type": 1,
+            "unit": 254
+          },
+          {
+            "tid": 5,
+            "name": "DR % Activation at 50 uM",
+            "description": [
+              "Dose response (n=1) % activation of the assay at 50 uM compound calculated from the mean max and min plate controls"
+            ],
+            "type": 1,
+            "unit": 15,
+            "tc": {
+              "concentration": 50,
+              "unit": 5
+            }
+          },
+          {
+            "tid": 6,
+            "name": "DR Plate Mean max signal",
+            "description": [
+              "Dose response plate Mean maximum assay signal window plate controls n=32"
+            ],
+            "type": 1,
+            "unit": 254
+          },
+          {
+            "tid": 7,
+            "name": "DR Plate Mean min signal",
+            "description": [
+              "Dose response plate Mean minimum assay signal window plate controls n=24"
+            ],
+            "type": 1,
+            "unit": 254
+          },
+          {
+            "tid": 8,
+            "name": "DR plate Z'-factor",
+            "description": [
+              "Dose response plate Z'-factor calculated from the maximum and mimimum assay signal window plate controls"
+            ],
+            "type": 1,
+            "unit": 254
+          },
+          {
+            "tid": 9,
+            "name": "DR Assay Date",
+            "description": [
+              "Date the dose response assay was performed"
+            ],
+            "type": 4
+          }
+        ],
+        "revision": 1,
+        "activity_outcome_method": 2,
+        "project_category": 1
+      }
+    },
+    "data": [
+      {
+        "sid": 14727734,
+        "version": 0,
+        "outcome": 2,
+        "rank": 80,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 0.04
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.54
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 0.84
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 115.48
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 22404392,
+        "version": 0,
+        "outcome": 2,
+        "rank": 80,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 0.43
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 29.57
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 128.95
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 16952991,
+        "version": 0,
+        "outcome": 2,
+        "rank": 80,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 0.71
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 16.34
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 109.74
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.92
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14723875,
+        "version": 0,
+        "outcome": 2,
+        "rank": 80,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 0.89
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 1
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 26.18
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 111.45
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 845167,
+        "version": 0,
+        "outcome": 2,
+        "rank": 80,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 0.9
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 25.68
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 112.8
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.92
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14719117,
+        "version": 0,
+        "outcome": 2,
+        "rank": 80,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 0.91
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.21
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 0.58
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 107.9
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 11532976,
+        "version": 0,
+        "outcome": 2,
+        "rank": 70,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 1.48
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.97
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 7.66
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 121.55
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 24809205,
+        "version": 0,
+        "outcome": 2,
+        "rank": 70,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 1.51
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 22.1
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 110.69
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.93
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 24814503,
+        "version": 0,
+        "outcome": 2,
+        "rank": 70,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 2.73
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 9.4
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 127.08
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.19
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14726526,
+        "version": 0,
+        "outcome": 2,
+        "rank": 70,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 2.76
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 14.96
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 114.91
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 24809506,
+        "version": 0,
+        "outcome": 2,
+        "rank": 70,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 3.11
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.98
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 19.06
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 116.49
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14742005,
+        "version": 0,
+        "outcome": 2,
+        "rank": 70,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 6.44
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.98
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 5.58
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 78.78
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 847359,
+        "version": 0,
+        "outcome": 2,
+        "rank": 70,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 7.85
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 114.89
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 133.23
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.93
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17507336,
+        "version": 0,
+        "outcome": 2,
+        "rank": 70,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 9.42
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 1
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 149.72
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 123.59
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17508465,
+        "version": 0,
+        "outcome": 2,
+        "rank": 60,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 11.77
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 1
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 16.33
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 115.53
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.17
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.94
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17511877,
+        "version": 0,
+        "outcome": 2,
+        "rank": 60,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 12.27
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 19.57
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 117.92
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.93
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17510947,
+        "version": 0,
+        "outcome": 2,
+        "rank": 60,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 12.5
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 36.78
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 126.66
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17510616,
+        "version": 0,
+        "outcome": 2,
+        "rank": 60,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 12.98
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 1
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 18.96
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 121.21
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14727791,
+        "version": 0,
+        "outcome": 2,
+        "rank": 60,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 18.44
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 12.14
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 94.83
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14742458,
+        "version": 0,
+        "outcome": 2,
+        "rank": 60,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 19.15
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.98
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 8.23
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 129.86
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.19
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17510946,
+        "version": 0,
+        "outcome": 2,
+        "rank": 50,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 23.26
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 1
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 17.06
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 114.68
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.19
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14742370,
+        "version": 0,
+        "outcome": 2,
+        "rank": 50,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 26.04
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 1
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 19.44
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 122
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17516177,
+        "version": 0,
+        "outcome": 2,
+        "rank": 50,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 39.24
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 1
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 3.73
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 71.07
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.92
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14742003,
+        "version": 0,
+        "outcome": 2,
+        "rank": 50,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": "="
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 48.41
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 1
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 16.33
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 62.96
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.9
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 845769,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.4
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -12.2
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -0.68
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 857446,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 43.32
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 127.03
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 864576,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.82
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -10.82
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.32
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 3714272,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.67
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -10.71
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.17
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 4252106,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.38
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -11.88
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 4259196,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.84
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -11.01
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.49
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.93
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14727570,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 4.06
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 134.74
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.93
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14733070,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.56
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -10.15
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -0.04
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14740361,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.68
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -11.17
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.19
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14741966,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.79
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -11.27
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.56
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14742004,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.09
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 0.61
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -0.96
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.93
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14744185,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.46
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -11.23
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 0.29
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14746128,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.55
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -10.04
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -0.92
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17402739,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.38
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -9.74
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.77
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17407909,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.29
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -1.01
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 0.13
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17433753,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 107.18
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 113.55
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17504835,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 11.05
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 90.21
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17505825,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 23.36
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 98.9
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17510915,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.68
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -10.87
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -0.76
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17511585,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.99
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 13.13
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 17.85
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.93
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17513322,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 116.77
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 121.83
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.9
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17514552,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.62
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -10.54
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.47
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17517158,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.02
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 2.5
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 0.22
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 22406761,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.91
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -10.99
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -0.94
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.92
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 22406896,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.74
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 2.92
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 3.25
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 22409447,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.98
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 5.1
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 15.26
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 22412622,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 10.43
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 94.24
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 24708047,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.79
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -10.49
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -0.13
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 24806650,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.7
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -9.58
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.68
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.93
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 24807290,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.31
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 8.94
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 0.26
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.9
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 857769,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.96
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 14.51
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 7.8
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.19
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 859251,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.86
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -11.23
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.03
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.19
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 11533000,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.56
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -0.61
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 0.02
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 14745724,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.66
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -2.37
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 0.57
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.04
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.17
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.94
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 17511669,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.62
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -13.05
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.5
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.19
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 22400632,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": 37.57
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": 126.92
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.06
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.18
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      },
+      {
+        "sid": 22408796,
+        "version": 0,
+        "outcome": 1,
+        "rank": 40,
+        "data": [
+          {
+            "tid": 1,
+            "value": {
+              "sval": ">"
+            }
+          },
+          {
+            "tid": 2,
+            "value": {
+              "fval": 50
+            }
+          },
+          {
+            "tid": 3,
+            "value": {
+              "fval": 0.47
+            }
+          },
+          {
+            "tid": 4,
+            "value": {
+              "fval": -7.29
+            }
+          },
+          {
+            "tid": 5,
+            "value": {
+              "fval": -1.08
+            }
+          },
+          {
+            "tid": 6,
+            "value": {
+              "fval": 1.05
+            }
+          },
+          {
+            "tid": 7,
+            "value": {
+              "fval": 0.19
+            }
+          },
+          {
+            "tid": 8,
+            "value": {
+              "fval": 0.95
+            }
+          },
+          {
+            "tid": 9,
+            "value": {
+              "sval": "2/7/2008"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
