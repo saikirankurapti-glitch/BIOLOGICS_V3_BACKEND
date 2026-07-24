@@ -19,6 +19,9 @@ if CASHFREE_ENVIRONMENT == "PRODUCTION":
 else:
     CASHFREE_URL = "https://sandbox.cashfree.com/pg/orders"
 
+if not CASHFREE_APP_ID or not CASHFREE_SECRET_KEY:
+    print("WARNING: CASHFREE_APP_ID or CASHFREE_SECRET_KEY is not set. Payment endpoints will return 503.")
+
 class CreateOrderRequest(BaseModel):
     package_name: str # "Starter Pack" or "Pro Pack"
 
@@ -26,12 +29,15 @@ class VerifyOrderRequest(BaseModel):
     order_id: str
 
 PACKAGES = {
-    "Starter Pack": {"amount": 999.00, "tokens": 1000, "currency": "USD"},
-    "Pro Pack": {"amount": 4999.00, "tokens": 50000, "currency": "USD"}
+    "Starter Pack": {"amount": 999.00, "tokens": 1000, "currency": "INR"},
+    "Pro Pack": {"amount": 4999.00, "tokens": 50000, "currency": "INR"}
 }
 
 @router.post("/create-order")
 async def create_order(request: CreateOrderRequest, current_user: User = Depends(get_current_user)):
+    if not CASHFREE_APP_ID or not CASHFREE_SECRET_KEY:
+        raise HTTPException(status_code=503, detail="Payment gateway not configured. Please set CASHFREE_APP_ID and CASHFREE_SECRET_KEY in Azure App Settings.")
+
     if request.package_name not in PACKAGES:
         raise HTTPException(status_code=400, detail="Invalid package selected")
 
@@ -59,7 +65,7 @@ async def create_order(request: CreateOrderRequest, current_user: User = Depends
             "customer_phone": customer_phone
         },
         "order_meta": {
-            "return_url": "http://localhost:5000/billing.html?order_id={order_id}"
+            "return_url": f"https://www.genesysquantis.com/billing.html?order_id={order_id}"
         }
     }
 
@@ -88,8 +94,9 @@ async def create_order(request: CreateOrderRequest, current_user: User = Depends
             return {"payment_session_id": payment_session_id, "order_id": order_id}
 
         except httpx.HTTPStatusError as e:
-            print(f"Cashfree API Error: {e.response.text}")
-            raise HTTPException(status_code=500, detail="Failed to create payment order")
+            error_body = e.response.text
+            print(f"Cashfree API Error [{e.response.status_code}]: {error_body}")
+            raise HTTPException(status_code=500, detail=f"Cashfree error: {error_body}")
         except Exception as e:
             print(f"Error creating order: {e}")
             raise HTTPException(status_code=500, detail="Internal Server Error")
